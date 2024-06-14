@@ -6,6 +6,9 @@ export default function CatBox() {
   const smallCats = useCatStore(state => state.cats.smallCats)
   const increaseBigCats = useCatStore(state => state.increaseBigCats)
   const increaseSmallCats = useCatStore(state => state.increaseSmallCats)
+  const summary = useCatStore(state => state.summary)
+  
+ 
 
   return (
     <div>
@@ -23,6 +26,9 @@ export default function CatBox() {
         <button onClick={increaseBigCats}>big  cats</button>
         <button onClick={increaseSmallCats}>small  cats</button>
       </div>
+    <h1>
+      Summary {summary()}
+    </h1>
     </div>
   )
 }
