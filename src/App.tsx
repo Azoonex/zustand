@@ -1,12 +1,9 @@
-import React from 'react'
-import BearBox from './components/BearBox'
-import CatBox from './components/CatBox'
+import Swipers from './components/Swiper'
 
 export default function App() {
   return (
     <div>
-      <BearBox />
-      <CatBox />
+      <Swipers />
     </div>
   )
 }
