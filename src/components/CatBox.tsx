@@ -1,4 +1,3 @@
-import React from 'react'
 import { useCatStore } from '../stores/catStore'
 
 export default function CatBox() {
@@ -8,7 +7,6 @@ export default function CatBox() {
   const increaseSmallCats = useCatStore(state => state.increaseSmallCats)
   const summary = useCatStore(state => state.summary)
   
- 
 
   return (
     <div>
